@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 4060179477026081347}
   - component: {fileID: 97128895216697912}
   - component: {fileID: 5569060470777440133}
-  - component: {fileID: 7441332265378608760}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -207,23 +206,6 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
---- !u!114 &7441332265378608760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988291278222736958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 1
-  mNoiseOffsets: {x: -778.12024, y: 635.5107, z: -939.8334}
 --- !u!1 &2214156680806260250
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 3325449788839521526}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.8815, y: -29.98638, z: -9.881651}
+  m_LocalPosition: {x: 8.881466, y: -29.924692, z: -9.881651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -692,7 +674,6 @@ GameObject:
   - component: {fileID: 5368733659746084800}
   - component: {fileID: 3878904427588829105}
   - component: {fileID: 5354256561927289431}
-  - component: {fileID: 1969928944225463963}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -797,23 +778,6 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
---- !u!114 &1969928944225463963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6530467002483186805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-  m_PivotOffset: {x: 0, y: 0, z: 0}
-  m_AmplitudeGain: 0
-  m_FrequencyGain: 1
-  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &7189252375995907479
 GameObject:
   m_ObjectHideFlags: 0
