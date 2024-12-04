@@ -23,12 +23,6 @@ public class NextLevel : MonoBehaviour
         {
             nextSceneIndex = 0;
         }
-        // Configura el tiempo inicial del siguiente nivel en GameSession
-        GameSession gameSession = FindObjectOfType<GameSession>();
-        if (gameSession != null && nextSceneIndex < levelTimes.Length)
-        {
-            gameSession.SetStartTime(levelTimes[nextSceneIndex]);
-        }
 
         FindObjectOfType<ScenePersistence>().DeleteScenePersistance();
         SceneManager.LoadScene(nextSceneIndex);
