@@ -16,10 +16,6 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI vidasText;
     [SerializeField] TextMeshProUGUI scoreText;
 
-    // Timer
-    [SerializeField] float startTime = 60; // Tiempo inicial en segundos
-    private float timeRemaining;
-    [SerializeField] TextMeshProUGUI timerText;
     private void Awake()
     {
         int numGameSessions = FindObjectsOfType<GameSession>().Length;
@@ -50,7 +46,7 @@ public class GameSession : MonoBehaviour
         }
     }
 
-    void TakeLife()
+    public void TakeLife()
     {
         playerLifes--;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

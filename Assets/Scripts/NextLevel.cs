@@ -26,5 +26,13 @@ public class NextLevel : MonoBehaviour
 
         FindObjectOfType<ScenePersistence>().DeleteScenePersistance();
         SceneManager.LoadScene(nextSceneIndex);
+
+        // Ajusta el Timer en el nuevo nivel
+        yield return null; // Espera un frame para que la nueva escena cargue
+        Timer timer = FindObjectOfType<Timer>();
+        if (timer != null)
+        {
+            timer.InitializeTimer(); // Reinicia el Timer
+        }
     }
 }
