@@ -1,7 +1,6 @@
 Pequeño juego 2d creado en clase para aprender conceptos como: Tilemaps, Sprite sheets, Ruletiles, Animations, etc.
 
 Problemas a corregir:
-- El timer no funciona correctamente, no se resetea por cada nivel
 - No se muestra la puntuación en el Game Over
 
 Posibles cosas a añadir:
