@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 9062233358492397812}
   m_Layer: 8
   m_Name: Pelirrojo
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,12 +125,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 5
-  jumpSpeed: 20
+  jumpSpeed: 22
   climbSpeed: 5
   deathKick: {x: 25, y: 25}
   spikesDeadKick: {x: 10, y: 10}
-  kamikaze: {fileID: 0}
-  shootPoint: {fileID: 0}
+  kamikaze: {fileID: 8005997296034062261, guid: 31f8f1b92011a4148ae3ab0058c01fef, type: 3}
+  shootPoint: {fileID: 7797123480881597148}
+  shakeTimer: 1
+  shakeIntensity: 5
 --- !u!70 &6306598322827750927
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
