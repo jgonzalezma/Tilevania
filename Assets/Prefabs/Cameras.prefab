@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 695444392301945551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6320534, y: -32.16669, z: -9.881651}
+  m_LocalPosition: {x: 3.9053001, y: -32.103073, z: -9.881651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -476,7 +476,7 @@ Transform:
   m_GameObject: {fileID: 3716394330164017778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6320534, y: -32.16669, z: -9.881651}
+  m_LocalPosition: {x: 3.9053001, y: -32.103073, z: -9.881651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -566,7 +566,7 @@ Transform:
   m_GameObject: {fileID: 4348959585531387522}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6320534, y: -32.16669, z: -9.881651}
+  m_LocalPosition: {x: 3.9053001, y: -32.103073, z: -9.881651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 23
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -832,8 +832,8 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_AnimatedTarget: {fileID: 0}
+  m_Follow: {fileID: 6613009398268855786, guid: 1a51f139ece123042849a4018a19d796, type: 3}
+  m_AnimatedTarget: {fileID: 741103981819166903, guid: 1a51f139ece123042849a4018a19d796, type: 3}
   m_LayerIndex: 0
   m_ShowDebugText: 0
   m_ChildCameras:
@@ -863,4 +863,12 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 11400000, guid: e4759e22b0cb41a41b0c0def0462cafc, type: 2}
-  m_ParentHash: []
+  m_ParentHash:
+  - m_Hash: 1432961145
+    m_ParentHash: 756556552
+  - m_Hash: -827840423
+    m_ParentHash: 756556552
+  - m_Hash: 421803916
+    m_ParentHash: 756556552
+  - m_Hash: 1684585544
+    m_ParentHash: 756556552
