@@ -15,6 +15,7 @@ public class GameSession : MonoBehaviour
     [SerializeField] float gameOverDelay = 0.5f;
     [SerializeField] TextMeshProUGUI vidasText;
     [SerializeField] TextMeshProUGUI scoreText;
+    public static int FinalScore { get; private set; }
 
     private void Awake()
     {
@@ -57,6 +58,7 @@ public class GameSession : MonoBehaviour
     IEnumerator ResetGameSession()
     {
         yield return new WaitForSecondsRealtime(gameOverDelay);
+        FinalScore = score;
         FindObjectOfType<ScenePersistence>().DeleteScenePersistance();
         SceneManager.LoadScene("GameOver");
         Destroy(gameObject);
