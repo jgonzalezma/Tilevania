@@ -18,11 +18,10 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Vector2 spikesDeadKick = new Vector2(10f, 10f);
     [SerializeField] GameObject kamikaze;
     [SerializeField] Transform shootPoint;
-    [SerializeField] float shakeTimer = 1.0f;
-    [SerializeField] float shakeIntensity = 5.0f;
     private CinemachineVirtualCamera cinemachineVirtualCamera;
     float gravityAtStart;
     bool isAlive = true;
+    GameSession gameSession;
 
     private void Start()
     {
@@ -97,14 +96,9 @@ public class PlayerMove : MonoBehaviour
     {
         if ((cuerpoCollider.IsTouchingLayers(LayerMask.GetMask("Enemigos", "Spikes"))))
         {
-            if (shakeTimer <= 0f)
-            {
-                ShakeCamera(shakeIntensity, shakeTimer);
-                isAlive = false;
-                myAnimator.SetTrigger("dead");
-                myRigidbody2D.velocity = deathKick;
-                shakeTimer -= Time.deltaTime;
-            }
+            isAlive = false;
+            myAnimator.SetTrigger("dead");
+            myRigidbody2D.velocity = deathKick;
             FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
@@ -113,12 +107,5 @@ public class PlayerMove : MonoBehaviour
     {
         if (!isAlive) return;
         Instantiate(kamikaze, shootPoint.position, shootPoint.rotation);
-    }
-
-    public void ShakeCamera(float intensity, float time)
-    {
-        CinemachineBasicMultiChannelPerlin cbmcp = cinemachineVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        cbmcp.m_AmplitudeGain = intensity;
-        shakeTimer = time;
     }
 }

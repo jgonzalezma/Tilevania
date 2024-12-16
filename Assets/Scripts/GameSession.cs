@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] int playerLifes = 3;
+    public int playerLifes = 3;
     public int numOfHearts;
     public Image[] hearts;
     public Sprite fullHeart;
