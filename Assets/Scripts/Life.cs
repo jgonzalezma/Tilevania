@@ -15,12 +15,7 @@ public class Life : MonoBehaviour
         if (other.tag == "Player" && !isTaken)
         {
             isTaken = true;
-
-            if (gameSession.playerLifes < gameSession.numOfHearts)
-            {
-                gameSession.playerLifes++;
-            }
-
+            gameSession.AddLife();
             Destroy(gameObject);
         }
     }

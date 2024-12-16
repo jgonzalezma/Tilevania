@@ -55,6 +55,13 @@ public class GameSession : MonoBehaviour
         vidasText.text = playerLifes.ToString();
     }
 
+    public void AddLife()
+    {
+        playerLifes++;
+        vidasText.text = playerLifes.ToString();
+        Debug.Log("Vida añadida. Vidas actuales: " + playerLifes);
+    }
+
     IEnumerator ResetGameSession()
     {
         yield return new WaitForSecondsRealtime(gameOverDelay);
