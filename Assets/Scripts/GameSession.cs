@@ -57,9 +57,12 @@ public class GameSession : MonoBehaviour
 
     public void AddLife()
     {
-        playerLifes++;
-        vidasText.text = playerLifes.ToString();
-        Debug.Log("Vida añadida. Vidas actuales: " + playerLifes);
+        if (playerLifes < numOfHearts)
+        {
+            playerLifes++;
+            vidasText.text = playerLifes.ToString();
+            Debug.Log("Vida añadida. Vidas actuales: " + playerLifes);
+        }
     }
 
     IEnumerator ResetGameSession()
