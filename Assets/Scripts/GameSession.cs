@@ -61,7 +61,6 @@ public class GameSession : MonoBehaviour
         {
             playerLifes++;
             vidasText.text = playerLifes.ToString();
-            Debug.Log("Vida añadida. Vidas actuales: " + playerLifes);
         }
     }
 
