@@ -12,6 +12,7 @@ public class Life : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        gameSession = FindObjectOfType<GameSession>();
         if (other.tag == "Player" && !isTaken)
         {
             isTaken = true;
