@@ -21,7 +21,8 @@ public class PlayerMove : MonoBehaviour
     private CinemachineVirtualCamera cinemachineVirtualCamera;
     float gravityAtStart;
     bool isAlive = true;
-    GameSession gameSession;
+    float fireCooldown = 0.5f;
+    float lastFireTime = -Mathf.Infinity;
 
     private void Start()
     {
@@ -106,6 +107,13 @@ public class PlayerMove : MonoBehaviour
     void OnFire(InputValue value)
     {
         if (!isAlive) return;
-        Instantiate(kamikaze, shootPoint.position, shootPoint.rotation);
+        if (Time.time >= lastFireTime + fireCooldown)
+        {
+            // Actualiza el tiempo del último disparo
+            lastFireTime = Time.time;
+
+            // Instancia el objeto kamikaze
+            Instantiate(kamikaze, shootPoint.position, shootPoint.rotation);
+        }
     }
 }
